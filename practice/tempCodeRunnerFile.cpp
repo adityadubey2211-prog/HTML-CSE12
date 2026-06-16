@@ -1,0 +1,75 @@
+#include<iostream>
+using namespace std;
+
+class DLLNode {
+public:
+    int data;
+    DLLNode* prev;
+    DLLNode* next;
+
+    DLLNode(int val) {
+        data = val;
+        prev = NULL;
+        next = NULL;
+    }
+};
+void dllInsertHead(DLLNode* &head, int val) {
+    DLLNode* newNode = new DLLNode(val);
+    if (!head) {
+        head = newNode;
+        return;
+    }
+    newNode->next = head;
+    head->prev = newNode;
+    head = newNode;
+}
+void dllInsertTail(DLLNode* &head, int val) {
+    DLLNode* newNode = new DLLNode(val);
+
+    if (!head) {
+        head = newNode;
+        return;
+    }
+
+    DLLNode* temp = head;
+    while (temp->next != NULL) temp = temp->next;
+
+    temp->next = newNode;
+    newNode->prev = temp;
+}
+void dllInsertPos(DLLNode* &head, int pos, int val) {
+    if (pos == 1) {
+        dllInsertHead(head, val);
+        return;
+    }
+    DLLNode* temp = head;
+    int count = 1;
+
+    while (count < pos - 1 && temp->next) {
+        temp = temp->next;
+        count++;
+    }
+    DLLNode* newNode = new DLLNode(val);
+    newNode->next = temp->next;
+    if (temp->next){
+        temp->next->prev = newNode;
+    }
+    temp->next = newNode;
+    newNode->prev = temp;
+}
+void printDLL(DLLNode* head) {
+    while (head) {
+        cout << head->data << " <-> ";
+        head = head->next;
+    }
+    cout << "NULL"<<endl;
+}
+int main() {
+    DLLNode* dllHead = NULL;
+    dllInsertHead(dllHead, 10);
+    dllInsertHead(dllHead, 20);
+    dllInsertTail(dllHead, 30); 
+    dllInsertTail(dllHead, 40);
+    dllInsertPos(dllHead, 3, 50);
+    printDLL(dllHead);
+}
