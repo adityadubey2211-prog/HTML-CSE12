@@ -1,0 +1,74 @@
+body{
+    background-color: aqua;
+}
+.hero{
+    /* background-color: #000080; */
+    background-image: url("MALL.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero{
+    /* background-color:#000080; */
+    height: 100vh;
+    margin: 0%;
+}
+.navbar{
+    background-color: rgb(6, 235, 170);
+    height: 5vh;
+    margin: 10px;
+    border: 2px solid rgb(32, 102, 59);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selection{
+    position: relative;
+    margin : 10px;
+    background-color: rgb(254, 224, 224);
+    height: 50px;
+    width: 350px; 
+    border: 3px solid rgb(32, 102, 59);
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 140px;
+}
+.content{
+    .heading1{
+        font-size: 10px;
+        color: rgb(4, 31, 14);
+        height : 40px;
+        width: 700px;
+        font-style: italic;
+        font-weight: 700;
+        font-size: medium;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(54, 51, 103);
+        border-radius: 10px;
+    }
+    .cloth{
+        margin: 20px;
+        background-color: rgb(254, 224, 224);
+        height: 500px;
+        width: 500px; 
+        border: 3px solid rgb(32, 102, 59);
+        border-radius: 20px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+     
+}
+.super{
+    .slot1{
+        background-color: aqua;
+        height: 250px;
+        width: 250px;
+        border-radius: 10px;
+    }
+}
+
