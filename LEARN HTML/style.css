@@ -1,0 +1,103 @@
+*{
+    font-family: 'Times New Roman';
+}
+
+form{
+    background-color:none;
+}
+
+
+h3{
+    color:rgb(38, 255, 0);
+}
+button{
+    color:black;
+    background-color:skyblue;
+}
+body{
+    background-color: #ffffff;
+} 
+
+#box{
+    color:rgb(192, 198, 15);
+    text-align: center;
+}
+#checbox{
+    color: rgb(8, 223, 33);
+}
+p{
+    text-align: center;
+    color: rgb(198, 56, 84);
+}
+h3{
+    width: 400px;
+    height: normal;
+    text-align: center;
+    /* border-style: solid; */
+    border-width:5px ;
+    border-color: black;
+    border-style: double;
+    text-align: center;
+    border-radius: 25px;
+    padding: 5px;
+    
+}
+p{
+    text-transform:uppercase;
+}
+#user_detail{
+    text-align: center;
+     transition-property:all;
+    transition-duration: 4s;
+    transition-timing-function:ease-in;
+    /* transition-delay: 1s; */
+    
+}
+#user_detail:hover{
+    transform:scaleX(3) ;
+}
+
+
+
+#CITY_SELCTOR{
+    font-size: 20px;
+}
+#navbar{
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    background-color:#0f1111 ;
+    color: white;
+}
+#button{
+    background-color: #f08804;
+}
+#logo{
+    text-decoration: none;
+    color: #f08804;
+    font-size: 25px;
+}
+a{
+    margin-right: 200px;
+}
+#image{
+    position: fixed;
+    width: 50px;
+    padding-top: 10px;
+    margin-left: 100px;
+    margin-right:0;
+}
+footer{
+    text-align: center;
+    background-color: darkgray;
+    color: aliceblue;
+}
+#submit{
+    background-color: #0e0800;
+    color: #ffffff;
+    border-radius: 50%;
+}
+body{
+    background-image: url(welcome.png);
+    background-size: cover;
+}
