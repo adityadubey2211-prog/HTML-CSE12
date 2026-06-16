@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+}
+.main .navbar {
+    margin-top: -700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1650px;
+}
+main .box {
+    height: 150vh;
+    width: 100%; 
+    background-color: black;
+    opacity: 0.44;
+} 
+.main{
+    background-image: url("netflix bg.jpg");
+    height: 120vh;
+    background-size: cover;
+    margin-top: -149px;
+    background-color: black;
+}
+.hero{
+    position: relative;
+    height: 800px;
+    width: 500px;
+    background-color: black;
+    opacity: 0.74;
+    margin-top: -890px;
+    margin-left: 35%;
+}
+.form{
+    h1{
+        margin: 10px;
+    }
+    margin-left: 50px;
+    position: relative;
+    color: white;
+}
+.number{
+    color: white;
+    margin-top: 30px;
+    border:2px solid white;
+    background-color: black;
+    height:50px;
+    width: 350px;
+    border-radius: 10px;
+}
+.number,.pass:hover{
+    border:2px solid rgb(223, 0, 0);
+    transition-duration: 0.9s;
+}
+.pass{
+    color: white;
+    margin-top: 30px;
+    border:2px solid white;
+    background-color: black;
+    height:50px;
+    width: 350px;
+    border-radius: 10px;
+}
+.singin,.code{
+    color: white;
+    margin-top: 30px;
+    border:2px solid white;
+    background-color: rgb(255, 0, 0);
+    height:50px;
+    width: 350px;
+    border-radius: 10px;
+}
+.op{
+    color: gray;
+    margin-top: 20px;
+    margin-left: 37%;
+}
+.code{
+    background-color: grey;
+}
+.forget{
+    margin-top: 30px;
+    a{
+        font-size: large;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-left: 27%;
+        color: white;
+    }
+}
+
+
